@@ -18,6 +18,7 @@ app.use( express.json() )
 
 // Ruta de autenticación
 app.use( '/api/auth', require('./routes/auth') );
+app.use( '/api/events', require('./routes/events') );
 
 // Base de Datos
 dbConnection()
